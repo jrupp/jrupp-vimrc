@@ -47,7 +47,8 @@ Plugin 'ClockworkNet/vim-vcl'
 
 Plugin 'mojo.vim'
 
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " Terminal Vim with 256 colors colorscheme
 Plugin 'fisadev/fisa-vim-colorscheme'
@@ -197,7 +198,7 @@ endif
 map Q gq
 
 " use 256 color when possible
-if &term =~? 'mlterm\|xterm\|xterm-256\|screen-256'
+if (&term =~? 'mlterm\|xterm\|xterm-256\|screen-256') || has('nvim')
 	let &t_Co = 256
 	colorscheme fisa
 else
