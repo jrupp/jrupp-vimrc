@@ -41,6 +41,12 @@ Plugin 'nginx.vim'
 
 Plugin 'bash-support.vim'
 
+" Javascript Syntax Support
+Plugin 'pangloss/vim-javascript'
+
+" HTML5 complete and syntax
+Plugin 'othree/html5.vim'
+
 Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 
 Plugin 'ClockworkNet/vim-vcl'
@@ -315,4 +321,7 @@ if bufwinnr(1)
   nmap [ <C-W><
   nmap ] <C-W>>
 endif
+
+set modeline
+set modelines=5
 
